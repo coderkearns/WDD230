@@ -1,0 +1,37 @@
+body {
+    display: grid;
+    grid-template-rows: 15% 1fr 10%;
+    justify-content: center;
+}
+
+body > * {
+    width: 512px;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    max-width: 100%;
+    max-height: 90%;
+    border-radius: 20%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer > * {
+    margin: 0;
+}
