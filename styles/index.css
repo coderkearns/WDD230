@@ -9,6 +9,13 @@ body > * {
     max-width: 100%;
 }
 
+header,
+footer {
+    background-color: hsl(0, 0%, 92%);
+    border-radius: 12px;
+    margin: 0.25rem 0;
+}
+
 header {
     display: flex;
     justify-content: space-around;
@@ -34,4 +41,13 @@ footer {
 
 footer > * {
     margin: 0;
+}
+
+#assignments {
+    height: 100%;
+    margin: 0;
+}
+
+#assignments ul li {
+    padding: 0.5em 0;
 }
