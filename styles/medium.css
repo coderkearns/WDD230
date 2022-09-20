@@ -1,0 +1,23 @@
+@media (min-width: 32.5rem) {
+
+    body {
+        /* Larger header and footer */
+        grid-template-rows: 15% 1fr 10%;
+        /* Limit to 32.5rem width, center in that area */
+        min-width: 32.5rem;
+        width: 80%;
+        max-width: 44rem;
+        margin: 0 auto;
+    }
+
+    header,
+    footer {
+        /* curved edges of header and footer */
+        border-radius: 12px;
+        /* More space */
+        margin: 0.5rem 0;
+        /* Modified box shadows that are more centered and nicer with the curves */
+        box-shadow: 4px 2px 15px -1px #00000052;
+    }
+
+}
