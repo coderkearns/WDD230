@@ -1,0 +1,15 @@
+@media (min-width: 64.5rem) {
+
+    body {
+        max-width: 64.5rem;
+    }
+
+    #designs {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #designs .card:nth-of-type(3) {
+        grid-column: inherit;
+    }
+
+}

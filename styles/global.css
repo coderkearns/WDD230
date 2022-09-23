@@ -1,12 +1,19 @@
 :root {
     font-size: 16px;
     font-family: "Space Mono", monospace;
+    --color-bg: hsl(0, 0%, 98%);
+        --color-primary: hsl(290, 4%, 27%);
+        --color-accent: hsl(110, 100%, 61%);
+        --color-accent-2: hsl(321, 100%, 45%);
 }
+
 html {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+    background-color: var(--color-bg) !important;
+        color: var(--color-primary);
 }
 
 body {
@@ -23,4 +30,14 @@ h4,
 h5,
 h6 {
     font-family: "Poppins", system-ui, sans-serif;
+    color: var(--color-primary);
+        text-shadow: 0.05em 0.05em var(--color-accent);
+    }
+
+    a {
+        color: var(--color-accent-2);
+}
+
+img {
+    box-shadow: 0.1em 0.1em 0 0 var(--color-accent);
 }

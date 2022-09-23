@@ -21,18 +21,24 @@ footer {
     text-shadow: 0.05em 0.05em var(--color-bg);
 }
 header {
+    height: fit-content;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-header img {
-    max-width: 100%;
-    max-height: 90%;
+header :is(h1, h2) {
+    margin: 0;
+    margin-top: 0.1vw;
 }
 
-header h1 {
-    margin: 0;
+h1 {
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1.15rem;
 }
 
 footer {
@@ -40,6 +46,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-size: 2vh;
 }
 
 footer > * {
@@ -50,11 +57,35 @@ main {
     margin: 0 1rem;
 }
 
-#assignments {
-    height: 100%;
-    margin: 0;
+#designs {
+    padding: 0.5rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
-#assignments ul li {
-    padding: 0.5em 0;
+.card {
+    max-width: 100%;
+    padding: 0 1em;
+    box-shadow: 0.1em 0.1em 0 0 var(--color-accent);
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+.card h3 {
+    color: var(--color-accent);
+    text-shadow: 0.05em 0.03em var(--color-bg);
+}
+
+.card div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card img, .card video {
+    max-width: 100%;
+    min-width: 80%;
 }

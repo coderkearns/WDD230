@@ -1,0 +1,22 @@
+@media (min-width: 32.5rem) {
+
+    body {
+        margin: 0 auto;
+        min-width: 32.5rem;
+        max-width: 90%;
+    }
+
+    header,
+    footer {
+        margin: 0.5rem 0;
+    }
+
+    #designs {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #designs .card:nth-of-type(3) {
+        grid-column: span 2;
+    }
+
+}

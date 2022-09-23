@@ -12,12 +12,8 @@
 
     header,
     footer {
-        /* curved edges of header and footer */
-        border-radius: 12px;
         /* More space */
         margin: 0.5rem 0;
-        /* Modified box shadows that are more centered and nicer with the curves */
-        box-shadow: 4px 2px 15px -1px #00000052;
     }
 
 }
