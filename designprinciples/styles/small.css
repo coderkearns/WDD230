@@ -89,3 +89,8 @@ main {
     max-width: 100%;
     min-width: 80%;
 }
+
+.card a {
+    /* alternative lighter color to increase contrast, TODO make it a global var later */
+    color: hsl(330, 100% 80%);
+}
