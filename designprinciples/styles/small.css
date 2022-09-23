@@ -92,5 +92,5 @@ main {
 
 .card a {
     /* alternative lighter color to increase contrast, TODO make it a global var later */
-    color: hsl(330, 100% 80%);
+    color: hsl(330, 100%, 80%);
 }
