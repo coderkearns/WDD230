@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+}
+
+table tr:first-child td {
+    width: 2em;
+    height: 4em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.2rem;
+    box-shadow: 2px 4px 5px -3px rgba(0, 0, 0, 0.6);
+    background-color: var(--color, #ff0000);
+}
