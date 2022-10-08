@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Reach Chamber's Homepage - An example chamber of commerce site (not a real chamber)">
+    <title>Reach Chamber</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter+Tight:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header>
+        <section class="nav">
+            <img src="./images/logo.svg" alt="Reach Chamber" class="logo">
+            <div id="right">
+                <ul id="social">
+                    <li><img src="./images/social-fb.png" alt="Facebook" /></li>
+                    <li><img src="./images/social-t.png" alt="Twitter" /></li>
+                </ul>
+                <nav class="closed">
+                    <ul>
+                        <li><button class="nav-btn"
+                                onclick="document.querySelector('nav').classList.toggle('closed')"></button>
+                        </li>
+                        <li><a href="#" class="active">Discover</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="date-display">
+            <p>Today is <span id="date">Loading...</span></p>
+        </section>
+    </header>
+    <main>
+        <section class="hero">
+            <div>Hero with site name and call to action</div>
+        </section>
+        <section class="event">
+            <div>Event</div>
+        </section>
+        <section class="weather">
+            <div>Weather</div>
+        </section>
+        <section class="news">
+            <div>News Release</div>
+        </section>
+        <section class="spotlights">
+            <div>
+                <section>Spotlight 1</section>
+                <section>Spotlight 2</section>
+            </div>
+        </section>
+        <section class="join">
+            <div>Join</div>
+        </section>
+    </main>
+    <footer>
+        <section class="info">
+            <div class="part-1">
+                <div>
+                    <img src="./images/logo.svg" alt="Reach Chamber Logo">
+                </div>
+                <div>
+                    <p><strong>Reach Chamber of Commerce</strong></sp>
+                    <p><em>Address...<br />More, address 000293</em></p>
+                </div>
+            </div>
+            <div class="part-2">
+                <p>example@reachchamber.com</p>
+                <p>(089) 123-4567</p>
+                <strong>Location Map</strong>
+            </div>
+        </section>
+        <section class="devinfo">
+            <p>&copy; Copyright <span id="footercopyright">2022</span> Reach Chamber</p>
+            <p>|</p>
+            <p><strong>Carter Kearns</strong></p>
+            <p>|</p>
+            <p>WDD 230 Project</p>
+            <p>|</p>
+            <p>Last Modification: <span id="lastupdated">10/08/2022</span></p>
+        </section>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
