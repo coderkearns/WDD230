@@ -295,6 +295,9 @@ section.spotlights > div > section > img {
     max-width: 80%;
 }
 
+p.contact {
+    overflow-wrap: break-word;
+}
 /* Join is hidden on small screens */
 section.join {
     display: none;
@@ -322,7 +325,7 @@ section.join .join-btn:hover {
 .pic-temp {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
