@@ -37,6 +37,9 @@ header section {
 header #right {
     display: flex;
     align-self: self-start;
+    width: fit-content;
+        max-width: 100%;
+        flex-direction: row;
 }
 
 header #right #social {
