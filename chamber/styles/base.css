@@ -216,14 +216,22 @@ footer section img {
 }
 
 section.hero {
-    background-image:
-        linear-gradient(#fffa, #000a),
-        url(https://picsum.photos/800/600);
-    background-size: cover;
-    background-blend-mode: overlay;
+position: relative;
+    z-index: 1;
+}
+
+section.hero > picture > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    filter: opacity(0.5);
 }
 
 section.hero > div {
+    position: relative;
+        z-index: 3;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
 }

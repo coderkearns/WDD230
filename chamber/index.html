@@ -7,20 +7,21 @@
         content="Reach Chamber's Homepage - An example chamber of commerce site (not a real chamber)">
     <title>Reach Chamber</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter+Tight:wght@500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
 </head>
 
 <body>
     <header>
         <section class="nav">
-            <img src="./images/logo.svg" alt="Reach Chamber" class="logo">
+            <img src="./images/logo.webp" alt="Reach Chamber" class="logo">
             <div id="right">
                 <ul id="social">
                     <li><img src="./images/social-fb.png" alt="Facebook" /></li>
@@ -45,6 +46,11 @@
     </header>
     <main>
         <section class="hero">
+            <picture>
+                <source srcset="./images/wdd230-org_large.jpg" media="(min-width: 64.5rem)">
+                <source srcset="./images/wdd230-org_medium.jpg" media="(min-width: 32.5rem) and (max-width: 64.49rem)">
+                <img src="./images/wdd230-org_small.jpg" alt="People in a business meeting">
+            </picture>
             <div>
                 <h1>Welcome to Reach</h1>
                 <div><button>Join the Chamber</button></div>
@@ -63,14 +69,14 @@
                 <h2>Weather</h2>
                 <div class="pic-temp">
                     <img src="https://picsum.photos/600" />
-                    <span class="temperature">33 C</span>
+                    <span class="temperature"><span id="temp">N/A</span>°F</span>
                 </div>
                 <p class="type-name">Partly Cloudy</p>
                 <div class="data">
                     <p>Wind Speed:</p>
-                    <p>2.5 km/h</p>
+                    <p><span id="wind-speed">N/A</span> m/h</p>
                     <p>Wind Chill:</p>
-                    <p>N/A</p>
+                    <p><span id="wind-chill">N/A</span>°F</p>
                 </div>
             </div>
         </section>
@@ -120,7 +126,7 @@
         <section class="info">
             <div class="part-1">
                 <div>
-                    <img src="./images/logo.svg" alt="Reach Chamber Logo">
+                    <img src="./images/logo.webp" alt="Reach Chamber Logo">
                 </div>
                 <div>
                     <p><strong>Reach Chamber of Commerce</strong></sp>
@@ -144,7 +150,8 @@
         </section>
     </footer>
 
-    <script src="scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/windchill.js"></script>
 </body>
 
 </html>
