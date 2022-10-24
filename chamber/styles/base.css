@@ -142,12 +142,14 @@ nav:not(.closed) {
 
 /* Content */
 main {
-    width: 95%;
-    min-height: 0;
-    max-height: 100%;
-    margin: 0;
-    padding: 1rem 2.5%;
+        width: 95%;
+            min-height: 0;
+            max-height: 100%;
+            margin: 0;
+            padding: 1rem 2.5%;
+}
 
+main.grid {
     display: grid;
         /* Remember that "join" is hidden on small screens */
         grid-template-rows: repeat(5, minmax(fit-content, 1fr));
@@ -155,7 +157,7 @@ main {
     gap: 1rem;
 }
 
-main > section {
+main.grid > section {
     display: block;
     background-color: var(--a-3);
     color: var(--a-1);
@@ -163,7 +165,7 @@ main > section {
     width: 100%;
 }
 
-main > section > div {
+main.grid > section > div {
     min-width: 5rem;
         min-height: 5rem;
     height: 100%;
@@ -175,6 +177,10 @@ section.spotlights > div {
     align-items: center;
 }
 
+section.hero {
+    min-width: 100%;
+    min-height: 16rem;
+}
 .spotlights > div > section {
     box-shadow: none;
     border-radius: 0;

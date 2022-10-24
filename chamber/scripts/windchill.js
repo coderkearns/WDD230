@@ -2,8 +2,9 @@ const temperatureOutput = document.getElementById('temp')
 const windSpeedOutput = document.getElementById('wind-speed')
 const windChillOutput = document.getElementById('wind-chill')
 
-const temperature = Number(prompt("What is the temperature in degrees Fahrenheit?"))
-const windSpeed = Number(prompt("What is the wind speed in miles per hour?"))
+// INPUTS
+const temperature = 42
+const windSpeed = 8
 
 temperatureOutput.textContent = temperature
 windSpeedOutput.textContent = windSpeed
