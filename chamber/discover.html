@@ -44,8 +44,74 @@
             <p><span id="date">Loading...</span></p>
         </section>
     </header>
-    <main>
-        <img src="https://picsum.photos/600" />
+    <main class="discover">
+        <h1>Discover</h1>
+        <p id="visits"></p>
+        <p>In a city with a population of 200,000 people, Reach chamber provides services to keep the community going</p>
+        <p>Learn more about our city:</p>
+        <section class="img-grid">
+            <div class="card img-card">
+                <picture class="lazy">
+                    <source data-srcset="./images/discover/history-400.webp" media="(min-width: 64.5rem)">
+                    <source data-srcset="./images/discover/history-300.webp" media="(min-width: 32.5rem) and (max-width: 64.49rem)">
+                    <img src="./images/discover/placeholder.webp" data-src="./images/discover/history-200.webp" width="300" height="300" alt="History Image">
+                </picture>
+                <div class="content">
+                    <h3>History</h3>
+                    <p>Learn about the rich and vibrant history in our city.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="card img-card">
+                <picture class="lazy">
+                    <source data-srcset="./images/discover/nature-400.webp" media="(min-width: 64.5rem)">
+                    <source data-srcset="./images/discover/nature-300.webp" media="(min-width: 32.5rem) and (max-width: 64.49rem)">
+                    <img src="./images/discover/placeholder.webp" data-src="./images/discover/nature-200.webp" width="300" height="300" alt="History Image">
+                </picture>
+                <div class="content">
+                    <h3>Nature</h3>
+                    <p>Explore the beautiful forests and mountains of our city.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="card img-card">
+                <picture class="lazy">
+                    <source data-srcset="./images/discover/ocean-400.webp" media="(min-width: 64.5rem)">
+                    <source data-srcset="./images/discover/ocean-300.webp" media="(min-width: 32.5rem) and (max-width: 64.49rem)">
+                    <img src="./images/discover/placeholder.webp" data-src="./images/discover/ocean-200.webp" width="300" height="300" alt="History Image">
+                </picture>
+                <div class="content">
+                    <h3>Ocean</h3>
+                    <p>Play at our beaches, all free from our city.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="card img-card">
+                <picture class="lazy">
+                    <source data-srcset="./images/discover/people-400.webp" media="(min-width: 64.5rem)">
+                    <source data-srcset="./images/discover/people-300.webp" media="(min-width: 32.5rem) and (max-width: 64.49rem)">
+                    <img src="./images/discover/placeholder.webp" data-src="./images/discover/people-200.webp" width="300" height="300" alt="History Image">
+                </picture>
+                <div class="content">
+                    <h3>People</h3>
+                    <p>Learn about the people in our city.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="card img-card">
+                <picture class="lazy">
+                    <source data-srcset="./images/discover/architecture-400.webp" media="(min-width: 64.5rem)">
+                    <source data-srcset="./images/discover/architecture-300.webp" media="(min-width: 32.5rem) and (max-width: 64.49rem)">
+                    <img src="./images/discover/placeholder.webp" data-src="./images/discover/architecture-200.webp" width="300" height="300" alt="History Image">
+                </picture>
+                <div class="content">
+                    <h3>Architecture</h3>
+                    <p>See the amazing buildings of our city.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
         <section class="info">
@@ -75,7 +141,9 @@
         </section>
     </footer>
 
+    <script src="./scripts/lazyload.js"></script>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/visits.js"></script>
 </body>
 
 </html>

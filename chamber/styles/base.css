@@ -19,6 +19,7 @@ html {
 }
 
 body {
+    max-width: 100%;
     display: grid;
     grid-template-rows: minmax(15vh, 10rem) 1fr minmax(10vh, 15rem);
 }
@@ -142,11 +143,13 @@ nav:not(.closed) {
 
 /* Content */
 main {
-        width: 95%;
-            min-height: 0;
-            max-height: 100%;
-            margin: 0;
-            padding: 1rem 2.5%;
+    width: 95%;
+    max-width: 95%;
+    width: 95%;
+    min-height: 0;
+    max-height: 100%;
+    margin: 0;
+    padding: 1rem 2.5%;
 }
 
 main.grid {
@@ -373,4 +376,57 @@ a {
 
 a:hover {
     color: var(--a-2);
+}
+
+/* DISCOVER */
+main.discover {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+}
+
+div.card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px -3px rgba(0, 0, 0, 0.8);
+    border-radius: 0.4rem;
+
+    padding: 1rem;
+}
+
+div.card.img-card {
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.card.img-card > picture {
+    width: 100%;
+    object-fit: cover;
+}
+
+div.card.img-card > picture > img {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+div.card.img-card > div.content {
+    width: calc(100% - 2rem);
+    padding: 0.5rem 1rem;
+}
+
+.lazy > img {
+    filter: blur(1rem) grayscale(1);
 }

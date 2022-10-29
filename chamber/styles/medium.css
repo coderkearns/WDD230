@@ -61,4 +61,14 @@
         flex-direction: row;
         justify-content: space-around;
     }
+
+    /* DISCOVER */
+    .img-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.card:hover {
+        box-shadow: 2px 2px 12px -4px rgba(0, 0, 0, 0.7);
+        transition: 0.2s;
+    }
 }
