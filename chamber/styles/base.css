@@ -16,12 +16,17 @@
 html {
     font-size: var(--font-size-0);
     font-family: var(--font-family-0);
+    width: 100vw;
 }
 
 body {
     max-width: 100%;
     display: grid;
     grid-template-rows: minmax(15vh, 10rem) 1fr minmax(10vh, 15rem);
+}
+
+body > * {
+    max-width: 100vw;
 }
 
 header {
@@ -431,6 +436,8 @@ div.card.img-card > div.content {
     filter: blur(1rem) grayscale(1);
 }
 
+
+
 /* JOIN */
 main.join {
     max-width: 90%;
@@ -446,6 +453,7 @@ form {
     flex-direction: column;
     gap: 0.5rem;
 }
+
 
 label {
     display: flex;
