@@ -1,0 +1,42 @@
+main {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+label {
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    width: 100%;
+    text-align: center;
+}
+
+/* :has() does not work in firefox, but supports chrome, edge, safari */
+label:has(textarea) {
+    flex-direction: column;
+    align-items: space-between;
+}
+
+form > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+form > input[type="submit"] {
+    width: 100%;
+}

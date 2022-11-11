@@ -1,6 +1,6 @@
 @media (min-width: 32.5rem) {
 
-    margin {
+    main {
         margin-top: 1rem;
         max-width: calc(100% - 2rem);
         grid-template: repeat(5, 1fr) / repeat(3, 1fr);

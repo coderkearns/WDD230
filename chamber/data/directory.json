@@ -1,0 +1,76 @@
+{
+    "directory": [
+        {
+            "name": "A Inc.",
+            "address": "1000 A Avenue, City, 10000",
+            "phone": "100-000-0000",
+            "website": "https://reach.chamber/permalink/a",
+            "level": "np",
+            "img": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "B Inc.",
+            "address": "1000 B Avenue, City, 10000",
+            "phone": "100-000-0000",
+            "website": "https://reach.chamber/permalink/b",
+            "level": "bronze",
+            "img": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "C Inc.",
+            "address": "1000 C Avenue, City, 10000",
+            "phone": "100-000-0000",
+            "website": "https://reach.chamber/permalink/c",
+            "level": "bronze",
+            "img": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "D Inc.",
+            "address": "1000 D Avenue, City, 10000",
+            "phone": "100-000-0000",
+            "website": "https://reach.chamber/permalink/d",
+            "level": "silver",
+            "img": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "E Inc.",
+            "address": "1000 E Avenue, City, 10000",
+            "phone": "100-000-0000",
+            "website": "https://reach.chamber/permalink/E",
+            "level": "gold",
+            "img": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "F Inc.",
+            "address": "1000 F Avenue, City, 10000",
+            "phone": "100-000-0000",
+            "website": "https://reach.chamber/permalink/f",
+            "level": "gold",
+            "img": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "G Inc.",
+            "address": "1000 G Avenue, City, 10000",
+            "phone": "100-000-0000",
+            "website": "https://reach.chamber/permalink/G",
+            "level": "gold",
+            "img": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "H Inc.",
+            "address": "1000 H Avenue, City, 10000",
+            "phone": "100-000-0000",
+            "website": "https://reach.chamber/permalink/h",
+            "level": "gold",
+            "img": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "I Inc.",
+            "address": "1000 I Avenue, City, 10000",
+            "phone": "100-000-0000",
+            "website": "https://reach.chamber/permalink/I",
+            "level": "gold",
+            "img": "https://via.placeholder.com/150"
+        }
+    ]
+}

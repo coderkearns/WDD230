@@ -1,0 +1,84 @@
+/* Only 1 of .cards or .list will be shown at a time */
+div.cards-mode > .list {
+    display: none;
+}
+
+div.list-mode > .cards {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.buttons {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.card {
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card > * {
+    margin: 0.25rem 2rem;
+}
+
+.level::before {
+    content: '';
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.level.bronze::before {
+    background-color: rgb(109, 57, 37);
+}
+
+.level.silver::before {
+    background-color: rgb(122, 121, 121);
+}
+
+.level.gold::before {
+    background-color: rgb(201, 167, 17);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: var(--a-1);
+    color: var(--a-3);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+tr > td:nth-child(4) {
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,324 @@
+/* SMALL */
+main {
+    display: grid;
+    /* Remember that "join" is hidden on small screens */
+    grid-template-rows: repeat(5, minmax(fit-content, 1fr));
+    align-items: center;
+    gap: 1rem;
+}
+
+main > section {
+    display: block;
+    background-color: var(--a-3);
+    color: var(--a-1);
+    height: 100%;
+    width: 100%;
+}
+
+main > section > div {
+    min-width: 5rem;
+    min-height: 5rem;
+    height: 100%;
+}
+
+section.spotlights > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.hero {
+    min-width: 100%;
+    min-height: 16rem;
+}
+.spotlights > div > section {
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid var(--a-1);
+    width: 100%;
+    height: 100%;
+}
+
+.spotlights > div > section + section {
+    border-top: none;
+}
+
+section.hero {
+    position: relative;
+    z-index: 1;
+}
+
+section.hero > picture > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    filter: opacity(0.5);
+}
+
+section.hero > div {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+section.hero > div > h1 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+section.hero > div > div {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+section:not(.hero) > div {
+    margin: 0.5rem;
+    height: calc(100% - 1rem);
+    width: calc(100% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section > :is(div, div > section) > :is(h1, h2, h3, h4, h5, h6, p) {
+    margin: 0.25rem 0;
+}
+
+section > div p {
+    max-width: 80%;
+}
+
+section.spotlights > div > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+section.spotlights > div > section hr {
+    width: 100%;
+    border-bottom: 1px solid var(--a-1);
+}
+
+section.spotlights > div > section > img {
+    max-width: 80%;
+}
+
+p.contact {
+    overflow-wrap: break-word;
+}
+/* Join is hidden on small screens */
+section.join {
+    display: none;
+}
+
+section.join > div {
+    justify-content: space-around;
+}
+
+section.join .join-btn {
+    padding: 2rem;
+    width: 90%;
+    border-radius: 0.75rem;
+    border: none;
+    background: var(--a-1);
+    color: var(--bg);
+    box-shadow: 2px 2px 5px -3px rgba(0, 0, 0, 0.8);
+    transition: 0.2s;
+}
+
+section.join .join-btn:hover {
+    box-shadow: 2px 2px 12px -4px rgba(0, 0, 0, 0.7);
+}
+
+.pic-temp {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pic-temp img {
+    max-width: 50%;
+}
+
+.temperature {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.type-name {
+    width: 100%;
+    text-align: end;
+}
+
+.data {
+    width: 100%;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.data p {
+    text-align: center;
+}
+
+/* MEDIUM */
+@media (min-width: 32.5rem) {
+    main {
+        margin-top: 1rem;
+        max-width: calc(100% - 2rem);
+        grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    main > section {
+        grid-column: span 3;
+    }
+
+    main > section.hero {
+        grid-row: 1;
+    }
+
+    main > section.news {
+        grid-row: 2;
+    }
+
+    main > section.spotlights {
+        grid-row: 3;
+    }
+
+    main > section.spotlights > div {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    main > section.spotlights > div section + section {
+        border-top: 1px solid var(--a-1);
+    }
+
+    main > section.join {
+        display: flex;
+        grid-row: 4;
+    }
+
+    main > section.event {
+        grid-row: 5;
+        grid-column: 1 / 3;
+    }
+
+    main > section.weather {
+        grid-row: 5;
+        grid-column: 3;
+    }
+
+    footer section:first-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer section:first-child div.part-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer main > section.devinfo {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* LARGE */
+@media (min-width: 64.5rem) {
+    header #right {
+        flex-direction: row-reverse;
+        padding: 1rem;
+    }
+
+    header nav li:first-child {
+        display: none !important;
+    }
+
+    header nav :is(li, li.closed) {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+
+    header nav:not(.closed) {
+        align-self: inherit;
+    }
+
+    main {
+        /* 3 rows, 4 columns */
+        grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    main > section {
+        grid-column: span 1;
+        grid-row: span 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    main > section.event {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    main > section.weather {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    main > section.join {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    main > section.hero {
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+    }
+
+    main > section.news {
+        grid-column: 2 / 4;
+        grid-row: 3;
+    }
+
+    main > section.spotlights {
+        grid-column: 4;
+        grid-row: span 3;
+    }
+
+    main > section.spotlights > div {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    main > section.spotlights > div section {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    main > section.spotlights section + section {
+        border-top: 0;
+    }
+
+    section.devinfo {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

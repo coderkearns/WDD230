@@ -14,7 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/join.css">
+    <link rel="stylesheet" href="./styles/directory.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                                 onclick="document.querySelector('nav').classList.toggle('closed')"></button>
                         </li>
                         <li><a href="./discover.html">Discover</a></li>
-                        <li><a href="./directory.html">Directory</a></li>
+                        <li><a href="./directory.html" class="active">Directory</a></li>
                         <li><a href="./join.html">Join</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -43,10 +43,33 @@
             <p><span id="date">Loading...</span></p>
         </section>
     </header>
-    <main class="join">
-        <h1>Thank you for submitting!</h1>
-        <p>Your application has been submitted! You will receive email confirmation within 2-3 business days.</p>
+
+    <main>
+        <h1>Directory</h1>
+        <div class="buttons">
+            <button id="go-cards">CARDS</button>
+            <button id="go-list">LIST</button>
+        </div>
+        <div class="mode cards-mode"> <!-- or "list-mode" -->
+            <section class="cards"></section>
+            <section class="list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>Website</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+        </div>
     </main>
+
     <footer>
         <section class="info">
             <div class="part-1">
@@ -76,7 +99,7 @@
     </footer>
 
     <script src="./scripts/index.js"></script>
-    <script src="./scripts/join.js"></script>
+    <script src="./scripts/directory.js"></script>
 </body>
 
 </html>
