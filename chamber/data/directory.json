@@ -1,7 +1,7 @@
 {
     "directory": [
         {
-            "name": "A Inc.",
+            "name": "Arrdvark's Christmas Tree Distribution",
             "address": "1000 A Avenue, City, 10000",
             "phone": "100-000-0000",
             "website": "https://reach.chamber/permalink/a",
@@ -9,7 +9,7 @@
             "img": "https://via.placeholder.com/150"
         },
         {
-            "name": "B Inc.",
+            "name": "Phillip's Vacum Sales",
             "address": "1000 B Avenue, City, 10000",
             "phone": "100-000-0000",
             "website": "https://reach.chamber/permalink/b",
@@ -17,7 +17,7 @@
             "img": "https://via.placeholder.com/150"
         },
         {
-            "name": "C Inc.",
+            "name": "ABC Tupperware",
             "address": "1000 C Avenue, City, 10000",
             "phone": "100-000-0000",
             "website": "https://reach.chamber/permalink/c",
@@ -25,7 +25,7 @@
             "img": "https://via.placeholder.com/150"
         },
         {
-            "name": "D Inc.",
+            "name": "Mount Baton Art Gallery",
             "address": "1000 D Avenue, City, 10000",
             "phone": "100-000-0000",
             "website": "https://reach.chamber/permalink/d",
@@ -33,15 +33,15 @@
             "img": "https://via.placeholder.com/150"
         },
         {
-            "name": "E Inc.",
+            "name": "A&E Architecture",
             "address": "1000 E Avenue, City, 10000",
             "phone": "100-000-0000",
-            "website": "https://reach.chamber/permalink/E",
+            "website": "https://reach.chamber/permalink/e",
             "level": "gold",
             "img": "https://via.placeholder.com/150"
         },
         {
-            "name": "F Inc.",
+            "name": "Bart's Piano Tune-Up",
             "address": "1000 F Avenue, City, 10000",
             "phone": "100-000-0000",
             "website": "https://reach.chamber/permalink/f",
@@ -49,15 +49,15 @@
             "img": "https://via.placeholder.com/150"
         },
         {
-            "name": "G Inc.",
+            "name": "Gus's Psycic Detective Agency",
             "address": "1000 G Avenue, City, 10000",
             "phone": "100-000-0000",
-            "website": "https://reach.chamber/permalink/G",
+            "website": "https://reach.chamber/permalink/g",
             "level": "gold",
             "img": "https://via.placeholder.com/150"
         },
         {
-            "name": "H Inc.",
+            "name": "Mei-Mei's Dry Cleaning",
             "address": "1000 H Avenue, City, 10000",
             "phone": "100-000-0000",
             "website": "https://reach.chamber/permalink/h",
@@ -65,10 +65,10 @@
             "img": "https://via.placeholder.com/150"
         },
         {
-            "name": "I Inc.",
+            "name": "Carter's Software Dev Lessons",
             "address": "1000 I Avenue, City, 10000",
             "phone": "100-000-0000",
-            "website": "https://reach.chamber/permalink/I",
+            "website": "https://reach.chamber/permalink/i",
             "level": "gold",
             "img": "https://via.placeholder.com/150"
         }

@@ -40,6 +40,7 @@ function createCard(member) {
 
     const img = document.createElement("img")
     img.src = member.img
+    img.alt = member.name
     card.appendChild(img)
 
     const name = document.createElement("h3")
@@ -87,7 +88,7 @@ function createListItem(member) {
 
     const websiteContainer = document.createElement("td")
     const website = document.createElement("a")
-    website.textContent = member.website
+    website.textContent = "Link"
     website.href = member.website
     website.target = "_blank"
     websiteContainer.appendChild(website)
