@@ -17,7 +17,10 @@
         <link rel="stylesheet" href="../styles/base.css" />
         <link rel="stylesheet" href="../styles/about.css" />
         <script src="../scripts/about.js" defer></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=sample" defer></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=sample"
+            defer
+        ></script>
     </head>
 
     <body>
@@ -56,7 +59,7 @@
                 We believe in supporting healthy eating, organic bounty, and
                 convenience.
             </p>
-            <div id="m" style="width:402px;height:433px;"></div>
+            <div id="m" style="width: 402px; height: 433px"></div>
         </main>
         <footer>
             <img
@@ -70,6 +73,11 @@
                     <li><a href="../fresh/index.html">Fresh</a></li>
                     <li class="active"><a href="./index.html">About Us</a></li>
                 </ul>
+                <p>Last modified: <span id="lastModified"></span></p>
+                <script>
+                    document.getElementById("lastModified").textContent =
+                        document.lastModified
+                </script>
             </nav>
         </footer>
     </body>

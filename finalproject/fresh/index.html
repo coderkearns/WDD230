@@ -38,9 +38,18 @@
             <h1>Fresh</h1>
             <form id="fresh-form">
                 <table>
-                    <tr><td>First Name:</td><td><input name="firstName" type="text" required /></td></tr>
-                    <tr><td>Last Name:</td><td><input name="lastName" type="text" required /></td></tr>
-                    <tr><td>Email:</td><td><input name="email" type="email" /></td></tr>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input name="firstName" type="text" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input name="lastName" type="text" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input name="email" type="email" /></td>
+                    </tr>
                 </table>
                 <h3>Fruits</h3>
                 <div id="fruits-area">
@@ -48,13 +57,18 @@
                     <!-- <label><input type="checkbox" name="has-${id}"> ${name}</label> -->
                 </div>
                 <h3>Special Instructions</h3>
-                <textarea name="specialInstructions" placeholder="Any special instructions? Put them here!"></textarea>
-                <input type="submit" value="Submit"/>
+                <textarea
+                    name="specialInstructions"
+                    placeholder="Any special instructions? Put them here!"
+                ></textarea>
+                <input type="submit" value="Submit" />
             </form>
 
             <h2>Current Recipe</h2>
             <section id="recipe">
-                <h3>By <span id="name"><em>Name</em></span></h3>
+                <h3>
+                    By <span id="name"><em>Name</em></span>
+                </h3>
 
                 <h4>Ingredients:</h4>
                 <ul id="ingredients"></ul>
@@ -67,11 +81,26 @@
 
                 <h4>Nutrition</h4>
                 <table>
-                    <tr><td>Carbohydrates: </td><td id="carbohydrates">0</td></tr>
-                    <tr><td>Protein: </td><td id="protein">0</td></tr>
-                    <tr><td>Fat: </td><td id="fat">0</td></tr>
-                    <tr><td>Sugar: </td><td id="sugar">0</td></tr>
-                    <tr><td>Calories: </td><td id="calories">0</td></tr>
+                    <tr>
+                        <td>Carbohydrates:</td>
+                        <td id="carbohydrates">0</td>
+                    </tr>
+                    <tr>
+                        <td>Protein:</td>
+                        <td id="protein">0</td>
+                    </tr>
+                    <tr>
+                        <td>Fat:</td>
+                        <td id="fat">0</td>
+                    </tr>
+                    <tr>
+                        <td>Sugar:</td>
+                        <td id="sugar">0</td>
+                    </tr>
+                    <tr>
+                        <td>Calories:</td>
+                        <td id="calories">0</td>
+                    </tr>
                 </table>
             </section>
         </main>
@@ -87,6 +116,11 @@
                     <li class="active"><a href="./index.html">Fresh</a></li>
                     <li><a href="../about/index.html">About Us</a></li>
                 </ul>
+                <p>Last modified: <span id="lastModified"></span></p>
+                <script>
+                    document.getElementById("lastModified").textContent =
+                        document.lastModified
+                </script>
             </nav>
         </footer>
     </body>
