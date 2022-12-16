@@ -83,3 +83,12 @@ ul.nav-list li.active a {
     color: var(--rgb-4);
     text-decoration: none;
 }
+
+a {
+    color: var(--rgb-5);
+    transition: 0.2s;
+}
+
+a:hover {
+    color: var(--rgb-3);
+}

@@ -6,6 +6,12 @@ prepareForm()
 
 freshForm.addEventListener("submit", e => {
     e.preventDefault()
+
+    let recipesSubmitted =
+        Number(localStorage.getItem("recipesSubmitted") || 0) + 1
+
+    localStorage.setItem("recipesSubmitted", recipesSubmitted)
+
     const data = Object.fromEntries(new FormData(freshForm).entries())
 
     /* Load fruit IDs from multiple checkboxes into an array */

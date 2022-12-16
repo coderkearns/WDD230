@@ -16,7 +16,6 @@
         <link rel="stylesheet" href="./styles/normalize.css" />
         <link rel="stylesheet" href="./styles/base.css" />
         <link rel="stylesheet" href="./styles/index.css" />
-        <script defer src="./scripts/index.js"></script>
     </head>
 
     <body>
@@ -44,43 +43,69 @@
                 />
             </section>
             <section class="info-row">
-                <img src="https://via.placeholder.com/150" alt="Info Image" />
+                <img
+                    src="//upload.wikimedia.org/wikipedia/commons/thumb/1/14/Carls-downtown.jpg/250px-Carls-downtown.jpg"
+                    alt="Carlsbad Image"
+                />
+                <div class="content">
+                    <h2>About Carlsbad</h2>
+                    <p>
+                        Carlsbad is a coastal city in the North County region of
+                        San Diego County, California, United States. The city is
+                        87 miles (140 km) south of downtown Los Angeles and 35
+                        miles (56 km) north of downtown San Diego. As of the
+                        2020 census, the population of the city was 114,746.
+                        Carlsbad is a popular tourist destination and home to
+                        many businesses in the golf industry.
+                        <br />
+                        -
+                        <a
+                            href="https://en.wikipedia.org/wiki/Carlsbad,_California"
+                            >Wikipedia</a
+                        >
+                    </p>
+                </div>
+            </section>
+            <section class="info-row">
+                <img src="https://wallpapercave.com/wp/wp4166363.jpg" alt="Fruit Drinks Image" />
                 <div class="content">
                     <h2>Title</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Voluptatibus amet quia consequuntur animi
-                        molestiae ut, delectus maxime cumque officia veritatis
-                        fuga quaerat soluta alias error deserunt cum sit sunt
-                        perferendis! Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Itaque nemo, vero autem molestias
-                        doloremque quo, quisquam nobis velit odio beatae
-                        voluptatem consequatur modi aperiam, dolorum aut
-                        voluptates fugiat aliquam minus.
+                        Consumption of fruit drinks and beverages is increasing
+                        worldwide due to several factors and nowadays, they are
+                        very popular all around the world. Traditionally,
+                        extended shelf life and stability of fruit
+                        drinks/beverages has been achieved by thermal
+                        processing. Usually, fruit beverages would not need any
+                        preservative if properly thermally processed and
+                        packaged. However, some fruit drinks and beverages may
+                        contain certain amount of approved preservatives to
+                        attain an even more extended shelf life after opening.
+                        Synthetic preservatives such as benzoates and sorbates
+                        have been the most commonly utilized by the fruit
+                        beverage industry; although “naturally derived”
+                        preservatives have been recently suggested and in some
+                        cases included in fruit drinks due to consumers’ demand
+                        for “clean” labels and “more natural” beverages. The aim
+                        of this chapter is to provide relevant information
+                        regarding the properties and uses of novel and
+                        conventional preservatives for fruit drinks and
+                        beverages; preservatives’ sensory acceptability, legal
+                        status, and commercial availability will also be
+                        reviewed.
+                        <br />
+                        -
+                        <a
+                            href="https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/fruit-drinks"
+                            >ScienceDirect</a
+                        >
                     </p>
                 </div>
             </section>
             <section class="info-row">
                 <img src="https://via.placeholder.com/150" alt="Info Image" />
                 <div class="content">
-                    <h2>Title</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Voluptatibus amet quia consequuntur animi
-                        molestiae ut, delectus maxime cumque officia veritatis
-                        fuga quaerat soluta alias error deserunt cum sit sunt
-                        perferendis! Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Itaque nemo, vero autem molestias
-                        doloremque quo, quisquam nobis velit odio beatae
-                        voluptatem consequatur modi aperiam, dolorum aut
-                        voluptates fugiat aliquam minus.
-                    </p>
-                </div>
-            </section>
-            <section class="info-row">
-                <img src="https://via.placeholder.com/150" alt="Info Image" />
-                <div class="content">
-                    <h2>Title</h2>
+                    <h2>Other Info</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Voluptatibus amet quia consequuntur animi
@@ -96,6 +121,10 @@
             </section>
             <section class="get-started">
                 <a id="get-started" href="./fresh">Get Started!</a>
+                <p>You've submitted <span id="recipesSubmitted">0</span> recipes so far.</p>
+                <script>
+                    document.getElementById("recipesSubmitted").textContent = localStorage.getItem("recipesSubmitted") || 0
+                </script>
             </section>
             <section id="contact">
                 <h2>Contant</h2>
