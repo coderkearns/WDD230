@@ -1,0 +1,93 @@
+<!-- 2022-12-15 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <title>Fresh | Bountiful Foods</title>
+        <link rel="shortcut icon" href="../media/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Solway:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../styles/normalize.css" />
+        <link rel="stylesheet" href="../styles/base.css" />
+        <link rel="stylesheet" href="../styles/fresh.css" />
+        <script defer src="../scripts/fresh.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img
+                src="https://via.placeholder.com/64"
+                alt="Bountiful Foods Logo"
+            />
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../socials/index.html">Socials</a></li>
+                    <li class="active"><a href="./index.html">Fresh</a></li>
+                    <li><a href="../about/index.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Fresh</h1>
+            <form id="fresh-form">
+                <table>
+                    <tr><td>First Name:</td><td><input name="firstName" type="text" required /></td></tr>
+                    <tr><td>Last Name:</td><td><input name="lastName" type="text" required /></td></tr>
+                    <tr><td>Email:</td><td><input name="email" type="email" /></td></tr>
+                </table>
+                <h3>Fruits</h3>
+                <div id="fruits-area">
+                    <!-- Populated by JS -->
+                    <!-- <label><input type="checkbox" name="has-${id}"> ${name}</label> -->
+                </div>
+                <h3>Special Instructions</h3>
+                <textarea name="specialInstructions" placeholder="Any special instructions? Put them here!"></textarea>
+                <input type="submit" value="Submit"/>
+            </form>
+
+            <h2>Current Recipe</h2>
+            <section id="recipe">
+                <h3>By <span id="name"><em>Name</em></span></h3>
+
+                <h4>Ingredients:</h4>
+                <ul id="ingredients"></ul>
+
+                <h4>Special Instructions:</h4>
+                <p id="instructions"><em>None</em></p>
+
+                <h4>Order Date:</h4>
+                <p id="date">-</p>
+
+                <h4>Nutrition</h4>
+                <table>
+                    <tr><td>Carbohydrates: </td><td id="carbohydrates">0</td></tr>
+                    <tr><td>Protein: </td><td id="protein">0</td></tr>
+                    <tr><td>Fat: </td><td id="fat">0</td></tr>
+                    <tr><td>Sugar: </td><td id="sugar">0</td></tr>
+                    <tr><td>Calories: </td><td id="calories">0</td></tr>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <img
+                src="https://via.placeholder.com/64"
+                alt="Bountiful Foods Logo"
+            />
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../socials/index.html">Socials</a></li>
+                    <li class="active"><a href="./index.html">Fresh</a></li>
+                    <li><a href="../about/index.html">About Us</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
